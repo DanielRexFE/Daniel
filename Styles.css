@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.Caixa {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./IMG/dev.jpg);
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: 840PX 390px;
+    background-position: 440px;
+}
+
+.Menu-Mobile {
+    display: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 45px;
+    padding-right: 25px;
+    padding-top: 25px;
+}
+
+.portifolio {
+    color: #ffffff;
+    font-size: 35px;
+}
+
+.portifolio span {
+    color: #ff0c0c;
+}
+
+li {
+    color: #ffffff;
+    list-style: none;
+    display: inline-blocK;
+    font-size: 25px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.Link-Menu {
+    color: white;
+    text-decoration: none;
+}
+
+li:hover {
+    color: #ff0c0c;
+    transition: 0.5s;
+}
+
+.meu-nome {
+    position: absolute;
+    top: 70%;
+    color: #ffffff;
+    margin-left: 50px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    padding: 100px 15%;
+    background-color: black;
+}
+
+section img {
+    margin-right: 35px;
+    height: 400px;
+    border-radius: 100%;
+}
+
+section div h2 {
+    color: #ffffff;
+    font-size: 45px;
+}
+
+section div p {
+    text-align: justify;
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+section div button {
+    margin-top: 15px;
+    color: #ffffff;
+    background-color: #ff0c0c;
+    border: none;
+    font-size: 23px;
+    height: 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+section div button:hover {
+    background-color: #191919;
+    border: 2px solid #ff0c0c;
+    transition: 0.5s;
+}
+
+.Projetos {
+    background-color: #191919;
+}
+
+.Projetos h2 {
+    text-align: center;
+    color: white;
+    font-size: 70px;
+}
+
+.card {
+    margin-bottom: 60px;
+    color: white;
+    background-color: #000;
+    height: 335px;
+    width: 300px;
+    border-radius: 45px;
+    padding: 25px 35px;
+    text-align: center;
+}
+
+.card h5 {
+    color: white;
+    font-size: 30px;
+}
+
+.card p {
+    color: white;
+    font-size: 20px;
+    margin-top: 2px;
+    margin-bottom: 15px;
+}
+
+.card a {
+    color: white;
+    font-size: 15px;
+    margin-top: 15px;
+    background-color: #ff0c0c;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.card a:hover {
+    background-color: transparent;
+    border: 2px solid #ff0c0c;
+    transition: 0.5s;
+}
+
+.Org-projetos {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    padding-top: 100px;
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #191919;
+}
+
+footer h5 {
+    color: white;
+    font-size: 40px;
+}
+
+footer p {
+    color: white;
+    margin-top: 10px;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.Social img {
+    margin-top: 10px;
+    border-radius: 50%;
+    height: 40px;
+}
+
+.Social {
+    display: flex;
+    gap: 15px;
+}
+
+.Social a {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    background-color: #ff0c0c;
+}
+
+
+.Social a :hover {
+    transform: scale(1.25);
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 1080px) {
+    /*PROJETOS*/
+
+    body {
+        font-size: 14px;
+    }
+    .Org-projetos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /*CABEÇALHO*/
+    .Link-Menu {
+        display: none;
+    }
+
+    /*Sobre Mim*/
+    .Sobre-Mim {
+        flex-direction: column;
+    }
+
+    .cell {
+        padding-bottom: 380px;
+    }
+
+    .abrir-menu-cell i{
+        font-size: 15px;
+        color: white;
+    }
+
+    .Menu-Mobile {
+        position: fixed;
+        height: 100vh;
+        display: block;
+        background-color: #000;
+        top: 0;
+        right: 0;
+        width: 0%;
+        z-index: 99999;
+        overflow: hidden;
+    }
+
+    .Menu-Mobile.abrir-menu{
+        width: 70%;
+        transition: 0.5s;
+    }
+    
+    .cellmb ul {
+        text-align: right;
+    }
+
+    .cellmb ul li a{
+        width: 210px;
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+        padding: 20px 4px;
+        display: block;
+    }
+
+    .cellmb ul li a:hover{
+        background-color: #ac0303;
+    }
+
+    .Menu-Mobile .Botao-fechar svg{
+        color: white;
+        width: 50px;
+        height: 30px;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+
+    .lista-do-menu svg { 
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        color: #ff0c0c;
+        font-weight: 500;
+        z-index: 999;
+    }
+
+    .overlay-menu {
+        /* Adicione estilos padrão para o overlay, por exemplo: */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 999;
+        display: none; /* Inicialmente oculto */
+    }
+    
+    .overlay-menu.ativo {
+        display: block; /* Mostra o overlay quando a classe ativo é adicionada */
+    }
+    
+}
